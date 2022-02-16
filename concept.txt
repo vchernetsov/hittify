@@ -1,0 +1,11 @@
+20:10 - 20:30 Describe data generation script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Assumptions:
+        [-] - water reservour equals 500 liters
+        [-] - person washes at morning with a probability 90% (shower, water consumption - 100 liters, consumed in 15 minutes)
+        [-] - person washes at morning with a probability 40% (bath, water consumption - 300 liters, consumed in ten minutes)
+        [-] - dishwasher starts to work every evening approx from 20:00 to 21-00, consumes 10 litres every 10 mins 3 times
+        [-] - washing machine starts to work every 5-7 days 20:00 to 21-00, consumes 10 litres every 20 mins 3 times
+
+    Task: create probabilistic model which can predict water consumption
