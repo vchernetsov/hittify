@@ -1,11 +1,30 @@
-20:10 - 20:30 Describe data generation script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16 feb. 2022 20:10 - 20:30 Describe data generation script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Terms:
+        active days - when person is present in house
 
     Assumptions:
-        [-] - water reservour equals 500 liters
-        [-] - person washes at morning with a probability 90% (shower, water consumption - 100 liters, consumed in 15 minutes)
+        [?] - water reservour equals 500 liters
+        [-] - data collection - 1 month
+        [-] - Person goes to shower at 08-00
+        [-] - Person goes to bath at 22-00
+        [-] - Person enables dishwasher at 20-00
+        [-] - Person enables washing mashine at 20-10
+        [-] - Event tolerance from 10 to 30 mins
+
+    Adding:
+        [-] - person washes at morning with a probability 60% (shower, water consumption - 100 liters, consumed in 15 minutes)
         [-] - person washes at morning with a probability 40% (bath, water consumption - 300 liters, consumed in ten minutes)
         [-] - dishwasher starts to work every evening approx from 20:00 to 21-00, consumes 10 litres every 10 mins 3 times
-        [-] - washing machine starts to work every 5-7 days 20:00 to 21-00, consumes 10 litres every 20 mins 3 times
+        [-] - washing machine starts to work every 5-7 active days 20:00 to 21-00, consumes 10 litres every 20 mins 3 times
 
-    Task: create probabilistic model which can predict water consumption
+    Cancel:
+        [-] - person does not do anything every second friday due to public sauna attendance with a possibility 90%
+        [-] - person does not do anything every 10th day due to 2-days business trip with a possibility 75%
+        [-] - person does not do anything every 2-days business trip with a possibility 5% per month
+
+
+    Task: create probabilistic model which can predict water consumption accordingly to collected statistics
+
+16 feb. 2022 21:20 - 21:00 make that script
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
