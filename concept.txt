@@ -26,5 +26,5 @@
 
     Task: create probabilistic model which can predict water consumption accordingly to collected statistics
 
-16 feb. 2022 21:20 - 21:00 make that script
+16 feb. 2022 21:20 - 21:15 make that script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
