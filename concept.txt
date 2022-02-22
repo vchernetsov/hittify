@@ -5,26 +5,28 @@
 
     Assumptions:
         [?] - water reservour equals 500 liters
-        [-] - data collection - 1 month
-        [-] - Person goes to shower at 08-00
-        [-] - Person goes to bath at 22-00
-        [-] - Person enables dishwasher at 20-00
-        [-] - Person enables washing mashine at 20-10
-        [-] - Event tolerance from 10 to 30 mins
+        [+] - data collection - 1 month
+        [+] - Person goes to shower at 08-00
+        [+] - Person goes to bath at 22-00
+        [+] - Person enables dishwasher at 20-00
+        [-] - Event tolerance from 10 to 20 mins
 
     Adding:
-        [-] - person washes at morning with a probability 60% (shower, water consumption - 100 liters, consumed in 15 minutes)
-        [-] - person washes at morning with a probability 40% (bath, water consumption - 300 liters, consumed in ten minutes)
-        [-] - dishwasher starts to work every evening approx from 20:00 to 21-00, consumes 10 litres every 10 mins 3 times
-        [-] - washing machine starts to work every 5-7 active days 20:00 to 21-00, consumes 10 litres every 20 mins 3 times
+        [+] - person washes at morning with a probability 80% (shower, water consumption - 100 liters)
+        [+] - person washes at evening with a probability 60% (bath, water consumption - 300 liters)
+        [+] - dishwasher starts to work every evening approx from 20:00 to 21-00, consumes 10 litres every 10 mins 3 times
+        [+] - washing machine starts to work every saturday at 20:00 to 21-00, consumes 10 litres every 20 mins 3 times
 
     Cancel:
-        [-] - person does not do anything every second friday due to public sauna attendance with a possibility 90%
-        [-] - person does not do anything every 10th day due to 2-days business trip with a possibility 75%
-        [-] - person does not do anything every 2-days business trip with a possibility 5% per month
+        [+] - person does not do anything every friday due to public sauna attendance with a possibility 50%
+        [+] - person does not do anything every 10th day due to 2-days business trip with a possibility 75%
+        [+] - person does not do anything every 2-days business trip with a possibility 5% per month
 
 
     Task: create probabilistic model which can predict water consumption accordingly to collected statistics
 
 16 feb. 2022 21:20 - 21:15 make that script
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+21 feb. 2022 23:54 - 02:00 make that script
+
+generation script total: ~ 4h
